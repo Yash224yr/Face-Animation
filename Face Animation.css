@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+.ball{
+    height: 300px;
+    width: 300px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+.eyeleft, .eyeright{
+    height: 53px;
+    width: 32px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+}
+.eyeleft{
+    top: 80px;
+    left: 70px;
+}
+.eyeright{
+    top: 80px;
+    right: 90px;
+}
+.eyebrowleft , .eyebrowright{
+    width: 40px;
+    height: 20px;
+    border-top: 1px solid;
+    position: absolute;
+    border-radius: 64%;
+}
+.eyebrowleft{
+    top: 63px;
+    left: 68px;
+}
+.eyebrowright{
+    top:63px;
+    right: 86px;
+}
