@@ -1,43 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}   
-.ball{
+}
+
+#wrapper {
+    background: linear-gradient(to right, #b6fbff, #83a4d4);
+    height: 100vh;
+}
+.ball {
     height: 300px;
     width: 300px;
     border: 1px solid;
     border-radius: 50%;
     display: flex;
     position: relative;
+    background-color: violet;
 }
-.eyeleft, .eyeright{
+.eyeleft,.eyeright {
     height: 53px;
     width: 32px;
     border: 1px solid;
     border-radius: 50%;
     position: absolute;
 }
-.eyeleft{
+.eyeleft {
     top: 80px;
     left: 70px;
+    position: relative;
+    overflow: hidden;
 }
-.eyeright{
+
+.eyeright {
     top: 80px;
     right: 90px;
+    overflow: hidden;
 }
-.eyebrowleft , .eyebrowright{
+
+.eyebrowleft,
+.eyebrowright {
     width: 40px;
     height: 20px;
     border-top: 1px solid;
     position: absolute;
     border-radius: 64%;
 }
-.eyebrowleft{
+
+.eyesightleft,
+.eyesightright {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 26px;
+    left: 8px;
+}
+
+.eyebrowleft {
     top: 63px;
     left: 68px;
 }
-.eyebrowright{
-    top:63px;
+
+.eyebrowright {
+    top: 63px;
     right: 86px;
+}
+
+.nose {
+    height: 45px;
+    width: 12px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 46%
+}
+
+.smile {
+    width: 141px;
+    height: 93px;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: 54%;
+    left: 25%;
+    border-radius: 50%
 }
