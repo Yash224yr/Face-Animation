@@ -8,7 +8,7 @@
     background: linear-gradient(to right, #b6fbff, #83a4d4);
     height: 100vh;
 }
-.ball {
+.face {
     height: 300px;
     width: 300px;
     border: 1px solid;
@@ -16,6 +16,7 @@
     display: flex;
     position: relative;
     background-color: violet;
+    animation: rotate 5s linear;
 }
 .eyeleft,.eyeright {
     height: 53px;
@@ -23,12 +24,14 @@
     border: 1px solid;
     border-radius: 50%;
     position: absolute;
+    background-color: white;
 }
 .eyeleft {
     top: 80px;
     left: 70px;
     position: relative;
     overflow: hidden;
+    animation: blink 1.5s 5s;
 }
 
 .eyeright {
@@ -60,6 +63,7 @@
 .eyebrowleft {
     top: 63px;
     left: 68px;
+    animation: brow 1.5s 5s;
 }
 
 .eyebrowright {
@@ -74,7 +78,8 @@
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: 46%
+    left: 46%;
+    background-color: white;
 }
 
 .smile {
@@ -84,5 +89,46 @@
     position: absolute;
     top: 54%;
     left: 25%;
-    border-radius: 50%
+    border-radius: 50%;
+    animation: smile 1.5s 5s;
+}
+@keyframes blink{
+    0%{
+      height: 50px;
+    }
+    50%{
+        height:0px; top: 100px;
+    }
+    100%{
+        height: 50px;
+    }
+}
+@keyframes brow{
+    0%{
+        height: 10px;
+    }
+    50%{
+        height: 20px; top: 70px;
+    }
+    100%{
+        height: 30px;
+    }
+}
+@keyframes smile{
+    0%{
+        width: 141px;
+    }
+    50%{
+        width: 0px;
+        left: 150px;
+    }
+    100%{
+        width: 141px;
+    }
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg); top: 0px; left:0px ;}
+    50%{transform: rotate(360deg); top: 0px; left: 1200px;}
+    100%{
+        transform: rotate(0deg); top: 0px; left: 0px;}
 }
