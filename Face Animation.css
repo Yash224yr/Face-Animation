@@ -44,7 +44,7 @@
 .eyebrowright {
     width: 40px;
     height: 20px;
-    border-top: 1px solid;
+    border-top: 5px solid;
     position: absolute;
     border-radius: 64%;
 }
@@ -85,7 +85,7 @@
 .smile {
     width: 141px;
     height: 93px;
-    border-bottom: 2px solid;
+    border-bottom: 10px solid;
     position: absolute;
     top: 54%;
     left: 25%;
